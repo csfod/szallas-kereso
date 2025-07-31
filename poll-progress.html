@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poll Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .chart {
+            #max-width: 600px;
+            width: 50%;
+            margin: 0 auto 40px auto;
+        }
+        .chart img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .progress-container {
+            width: 50%;
+            height: 40px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .progress-bar {
+            height: 100%;
+            width: 75.0%;
+            background-color: #43a047;
+        }
+        .progress-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            text-shadow: 0 0 3px #000;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Részvételi arány - 2025.07.31</h1>
+
+    <div class="chart">
+        <img src="img/szavazatok.png" alt="Cumulative Voters Chart">
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <div class="progress-text">9 / 12 (75%)</div>
+    </div>
+</body>
+</html>
